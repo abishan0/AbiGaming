@@ -1,0 +1,113 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0a0a0f;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo img:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+/* NAV HOVER */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff00cc;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* HEADER */
+.about-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.about-header h1 {
+  color: #ff00cc;
+  text-shadow: 0 0 15px #ff00cc;
+}
+
+/* ABOUT */
+.about {
+  padding: 40px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* BOX */
+.about-box {
+  width: 300px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.about-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff00cc;
+}
+
+/* EXTRA */
+.extra {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
